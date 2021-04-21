@@ -1,0 +1,4 @@
+VT1 1 0 1E-3 TimeSeries/10G_TimeDomain_Data_Dirichlet.txt
+R1 1 0 50
+.transient( 0, 10000, 0.01 )
+.graph( 1 )

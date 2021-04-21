@@ -1,0 +1,2 @@
+"../bld/CircuitSimulator.exe"
+pause

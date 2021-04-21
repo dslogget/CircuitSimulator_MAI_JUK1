@@ -1,0 +1,9 @@
+VS1 1 0 5 1
+R1 1 2 50
+QMN 3 2 0
+R2 3 0 50
+.transient( 0, 10, 0.05 )
+.graph( 1 )
+.graph( 2 )
+.graph( 3 )
+.graph( 1, 2, 3 )

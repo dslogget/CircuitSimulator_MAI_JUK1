@@ -1,0 +1,11 @@
+%This is a netlist file for the 'simulate.m' MATLAB program
+VSg 1 0 1 1 0
+R1 1 2 50
+S1 0 2 2 0 3 0 S-Parameters/matchingSParam.s2p
+R2 3 0 50
+.transient(0,500,0.01)
+.graph(1)
+.graph(2)
+.graph(3)
+.graph(3,2,1)
+.nodc

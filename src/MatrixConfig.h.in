@@ -1,0 +1,2 @@
+#define Matrix_VERSION_MAJOR @Matrix_VERSION_MAJOR@
+#define Matrix_VERSION_MINOR @Matrix_VERSION_MINOR@

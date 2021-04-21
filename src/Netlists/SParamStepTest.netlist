@@ -1,0 +1,9 @@
+VT1 1 0 1E-1 Timeseries/Step.txt
+R1 1 2 50
+S1 0 2 2 0 3 0 S-Parameters/matchingSparam.s2p
+R2 3 0 50
+.transient(0,2,0.005)
+.graph(1)
+.graph(2)
+.graph(3)
+.outputFile("Datadumps/StepResponseOfNUDTIR.txt")

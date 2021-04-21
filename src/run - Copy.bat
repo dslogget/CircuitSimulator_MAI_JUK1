@@ -1,0 +1,2 @@
+"../releasebld/CircuitSimulator.exe"
+pause

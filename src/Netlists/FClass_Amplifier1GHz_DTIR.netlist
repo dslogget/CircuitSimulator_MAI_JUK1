@@ -1,0 +1,64 @@
+% This is the netlist for the Provided F-Class Amplifier
+% with COBRA based Transistor Model
+
+% =========== Capacitors ===========
+% Biasing capacitor
+Cbk 14 7 1000
+
+% Internal Capacitors
+Cds 4 6 1.000000000000000e-04
+CNgd 2 3 8.414491353653375e-05 0.823819882094039 -3.972818823528234 0.0267363621772036
+CNgs 5 6 6.121484546594651e-04 6.840699799958159e-04 4.416304358274649 2.125317001188324
+
+% Parasitic Capacitors
+Cpds 11 0 4.000009800000000e-05
+Cpd 14 11 0.001000500000000
+Cpg 9 10 6.2005e-04
+Cpgs 10 0 5.5563e-04
+
+% =========== Resistors ===========
+% Terminal Series Resistors
+Rd 13 14 2.688
+Rg 1 2 1.745
+Rs 12 6 0.833
+Rp2 16 0 50
+
+% Internal Resistors
+Rgd 3 4 100
+Rgs 2 5 100
+
+% Parasitic Resistors
+% Rpds 11 0 0
+Rpgs 10 0 397
+
+% =========== Inductors ===========
+% Terminal Inductors
+Ls 0 12 0.008582
+Ld 4 13 0.1522
+Lg 9 1 0.1479
+
+% Biasing Inductor
+Lrf 8 14 100
+
+% =========== Current Source ===========
+% Determined by model params. Needs to also know the four places for reference
+% i.e V_gs = n5 - n6 (across Cgs)
+% and V_ds = n4 - n6
+INds 4 6 5 6 4 6
+
+% =========== Voltage Sources ===========
+% Bias
+Vdsq 8 0 28
+% Gate
+VSg 9 15 2.645 1 0
+%VTg1 9 15 1E-3 TimeSeries/10G_TimeDomain_Data_Dirichlet.txt
+Vg2 15 0 -2.5
+
+% =========== S-Parameter Block ===========
+S1 0 2 7 0 16 0 S-Parameters/matchingSparam.s2p
+
+
+% =========== Directives ===========
+.transient( 0, 2000, 0.1 )
+.outputFile( "Datadumps/MOSNUDTIRLARGERSTEP.txt" )
+%.nodc

@@ -1,0 +1,5 @@
+timePoints(ns),timeSignal(V)
+0,0
+0.99999999,0
+1,1
+9999950,1

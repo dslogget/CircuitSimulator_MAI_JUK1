@@ -1,0 +1,13 @@
+VTg 1 0 1E-3 Timeseries/TimeSeries/10G_TimeDomain_Data_Dirichlet.txt
+R1 1 2 50
+S1 0 2 2 0 3 0 S-Parameters/matchingSParam.s2p
+R2 3 0 50
+
+R1 1 4 50
+SVF1 2 4 0 5 0 S-Parameters/matchingSParam.s2p
+R2 5 0 50
+
+.transient(0,500,0.05)
+.graph(1)
+.graph(2,4)
+.graph(3,5)

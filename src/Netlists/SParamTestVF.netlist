@@ -1,0 +1,11 @@
+%This is a netlist file for the 'simulate.m' MATLAB program
+VS1 1 0 5 3
+VS2 2 1 5 2
+R1 2 3 50
+SVF1 2 3 0 4 0 S-Parameters/ChebyshevADS20G20M.s2p
+R2 4 0 50
+.transient(0,1000,0.005)
+.graph(1)
+.graph(2)
+.graph(3)
+.graph(4)
