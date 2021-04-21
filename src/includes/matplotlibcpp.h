@@ -1,4 +1,7 @@
 #pragma once
+// The original version of this header file comes from the github repo
+// https://github.com/lava/matplotlib-cpp/
+// commit: 70d508fcb7febc66535ba923eac1b1a4e571e4d1
 
 // Python headers must be included before any system headers, since
 // they define _POSIX_C_SOURCE
