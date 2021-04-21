@@ -24,7 +24,7 @@
 ///
 /// @return The complete Regex.
 std::regex
-generateRegex( std::string indentifier, std::string simplifiedMatching,
-               bool startAnchor = true, bool endAnchor = true );
+generateRegex(std::string indentifier, std::string simplifiedMatching,
+              bool startAnchor = true, bool endAnchor = true);
 
 #endif

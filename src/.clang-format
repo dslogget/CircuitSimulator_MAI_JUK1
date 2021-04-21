@@ -1,6 +1,6 @@
 ---
 BasedOnStyle: Google
-AccessModifierOffset: '-3'
+AccessModifierOffset: '-4'
 AlignAfterOpenBracket: Align
 AlignConsecutiveMacros: 'false'
 AlignConsecutiveAssignments: 'false'
@@ -26,11 +26,11 @@ CompactNamespaces: 'false'
 ConstructorInitializerAllOnOneLineOrOnePerLine: 'false'
 DerivePointerAlignment: 'false'
 IncludeBlocks: Preserve
-IndentWidth: '3'
+IndentWidth: '4'
 IndentWrappedFunctionNames: 'false'
 KeepEmptyLinesAtTheStartOfBlocks: 'false'
 Language: Cpp
-MaxEmptyLinesToKeep: '3'
+MaxEmptyLinesToKeep: '2'
 NamespaceIndentation: None
 PenaltyBreakAssignment: '1000'
 PenaltyBreakBeforeFirstCallParameter: '1000'
@@ -54,13 +54,13 @@ SpaceBeforeParens: ControlStatements
 SpaceBeforeRangeBasedForLoopColon: 'true'
 SpaceInEmptyParentheses: 'false'
 SpacesBeforeTrailingComments: '1'
-SpacesInAngles: 'true'
+SpacesInAngles: 'false'
 SpacesInCStyleCastParentheses: 'false'
-SpacesInContainerLiterals: 'true'
-SpacesInParentheses: 'true'
-SpacesInSquareBrackets: 'true'
+SpacesInContainerLiterals: 'false'
+SpacesInParentheses: 'false'
+SpacesInSquareBrackets: 'false'
 Standard: Auto
-TabWidth: '3'
+TabWidth: '4'
 UseTab: Never
 
 ...
