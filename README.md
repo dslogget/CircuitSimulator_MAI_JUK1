@@ -16,7 +16,7 @@ This project has only been compiled on windows, but should theoretically compile
 
 ## Netlist Files
 
-Information on netlist files is provided in the netlist folder. Note the units of the simulation are non-standard
+Information on netlist files is provided in the [netlist folder](src/Netlists/Netlist%20Format.md). Note the units of the simulation are non-standard
 
 ## Running
 
