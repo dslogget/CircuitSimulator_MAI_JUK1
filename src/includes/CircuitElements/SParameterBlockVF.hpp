@@ -411,9 +411,8 @@ struct SParameterBlockVF : public Component<T> {
                         break;
                     }
 
-                    std::
-                        getline(file,
-                                line); // have to clear the end of the remainder line
+                    // have to clear the end of the remainder line
+                    std::getline(file, line);
                     std::getline(file, line);
                     polesLine = std::stringstream(line);
                     std::getline(file, line);
