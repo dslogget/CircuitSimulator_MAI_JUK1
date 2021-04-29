@@ -6,7 +6,7 @@ This repo showcases the simulation code developed as part of my MAI final projec
 
 This project requires a compiler capable of compiling C++20 or higher
 
-For vector fitting functionality Matlab is required to perform the fit. Otherwise a PRR file is need ([See PRR files for an example](src/PRR/PRRFile%20Format.md))
+For vector fitting functionality Matlab is required to perform the fit. Otherwise a PRR file is need ([See PRR files for an example](src/PRR/PRRFile%20format.md))
 
 For outputting graphs directly Python3 support with matplotlib and numpy is required
 
